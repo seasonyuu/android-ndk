@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN cd /opt/android-sdk-linux && \
 	wget -q --output-document=sdk-tools.zip https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip && \
 	unzip sdk-tools.zip && \
-	rm -f sdk-tools.zip && \
+	rm -f sdk-tools.zip
 RUN	echo y | sdkmanager "build-tools;28.0.3" "platforms;android-28" && \
 	echo y | sdkmanager "cmake;3.10.2.4988404"
 RUN wget -q --output-document=android-ndk.zip https://dl.google.com/android/repository/android-ndk-r18b-linux-x86_64.zip && \
