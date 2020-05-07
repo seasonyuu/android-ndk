@@ -11,7 +11,8 @@ ENV ANDROID_NDK_HOME /opt/android-ndk-linux
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	unzip \
-	wget
+	wget \
+	git-core
 RUN cd /opt/android-sdk-linux && \
 	wget -q --output-document=sdk-tools.zip https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip && \
 	unzip sdk-tools.zip && \
