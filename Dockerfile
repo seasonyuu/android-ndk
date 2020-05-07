@@ -1,5 +1,5 @@
-FROM openjdk:9-jdk
-MAINTAINER Season Yuu <seasonyuu@gmail.com>
+FROM openjdk:8-jdk
+LABEL Season Yuu <seasonyuu@gmail.com>
 
 RUN mkdir -p /opt/android-sdk-linux && mkdir -p ~/.android && touch ~/.android/repositories.cfg
 WORKDIR /opt
